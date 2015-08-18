@@ -16,6 +16,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * by Hanks
+ */
 public class MainActivity extends FragmentActivity {
 
     private ViewPager viewpager;
