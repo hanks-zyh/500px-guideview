@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/blurredView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="63dp"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/tour_avatar1"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical|left"
+                android:text="Kaitlyn 收藏了\n您的照片\n刚刚"
+                android:textColor="#111"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="63dp"
+                android:layout_gravity="left"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/tour_avatar2"
+                android:gravity="center_vertical|right"
+                android:text="Adam 评论了\n您的照片\n刚刚"
+                android:textColor="#111"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="63dp"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/tour_avatar3"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical|left"
+                android:text="Kaitlyn 收藏了\n您的照片\n刚刚"
+                android:textColor="#111"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="63dp"
+                android:layout_gravity="left"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/tour_avatar4"
+                android:gravity="right|center_vertical"
+                android:text="Adam 评论了\n您的照片\n刚刚"
+                android:textColor="#111"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rows"
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row1" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row2" />
+
+            <ImageView
+                android:layout_width="843dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/row3" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row4" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row5" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row6" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row7" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row8" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row9" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_device"
+            android:layout_width="340dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/tour_device" />
+
+        <ImageView
+            android:id="@+id/iv_initial_phone"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tour_initial_photo" />
+
+        <ImageView
+            android:id="@+id/iv_final_photo"
+            android:layout_width="48dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="144dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tour_final_photo" />
+
+        <TextView
+            android:id="@+id/tv_avatar_you"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/tour_avatar_you"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="您收藏这张照片\n刚刚"
+            android:textColor="#222"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <hanks.com.guideview.BlurringView
+        android:id="@+id/blurringView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        app:blurRadius="11"
+        app:downsampleFactor="6"
+        app:overlayColor="#99FFFFFF"
+        >
+
+    </hanks.com.guideview.BlurringView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="#2595ec"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</RelativeLayout>
