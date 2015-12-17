@@ -11,14 +11,7 @@
 
 
 下了500px应用, 瞬间被它的引导动画吸引住了,下面一步一步来实现引导动画
-
-## 最终效果图:
-
-![](http://file.bmob.cn/M01/09/67/oYYBAFXS0giAVZ_yAFK58BsXp6I373.gif)   
-
----
-清晰版
- ![](http://file.bmob.cn/M01/09/76/oYYBAFXS1AeADqx8AERLXngnTHk663.gif)
+ 
 
 下面的小圆点简单的,就先省略,重点在切换动画
 
