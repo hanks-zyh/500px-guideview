@@ -100,7 +100,7 @@ public class GuideFragment extends Fragment {
 
 
 -----
-##开始引导动画
+## 开始引导动画
 
 ```
 //给viewpager设置Pagetransformer
@@ -133,7 +133,7 @@ class HKTransformer implements ViewPager.PageTransformer {
 
 继续观察可以看到其中的规律,这里不再贴出图片了.
 
-###观察滑动规律
+### 观察滑动规律
 假设4个页面分别为A,B,C,D
 只看第0个页面
 
@@ -192,9 +192,9 @@ class HKTransformer implements ViewPager.PageTransformer {
 
  在position处于**(0,1]**时,表示两个页面正在滑动切换,可以打印一下看看,然后就是基于上面的规律, 根据**currentPosition**来判断是从在哪两个页面之间滑动
 
-###开始动画
+### 开始动画
 
-####A~B界面的动画
+#### A~B界面的动画
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -260,7 +260,7 @@ ll_comments.setScaleY(2 - f);
 运行效果  
 ![这里写图片描述](http://img.blog.csdn.net/20150818132835708)
 
-####B~C界面的动画
+#### B~C界面的动画
 布局文件
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -448,7 +448,7 @@ iv_final_photo.setAlpha(0.5f + 0.5f * f);
 效果:
 ![这里写图片描述](http://img.blog.csdn.net/20150818133033145)
 
-####C~D界面的动画
+#### C~D界面的动画
 
 设置缩放中心点
 ```
@@ -492,7 +492,7 @@ tv_register.setTranslationY(300 - 300 * f);
 ![这里写图片描述](http://img.blog.csdn.net/20150818133956984)
 
 ----
-###最后的模糊效果
+### 最后的模糊效果
 看到一篇[博客](http://developers.500px.com/2015/03/17/a-blurring-view-for-android.html) ([中文翻译版](http://www.devtf.cn/?p=158))讲解了500px的模糊效果
 
 项目地址:[https://github.com/500px/500px-android-blur](https://github.com/500px/500px-android-blur)
